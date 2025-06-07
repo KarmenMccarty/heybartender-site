@@ -90,18 +90,23 @@
             </div>
 
             <h3>Request a Quote</h3>
-            <form action="submit_quote.php" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+            <form action="https://formsubmit.co/heybartenderyeg@gmail.com" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="eventDetails" rows="4" placeholder="Tell us about your event" required></textarea>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+    <!-- Anti-spam honeypot -->
+    <input type="text" name="_honey" style="display:none">
 
-                <label for="eventDetails">Event Details:</label>
-                <textarea id="eventDetails" name="eventDetails" rows="4" required></textarea>
+    <!-- Disable CAPTCHA (optional) -->
+    <input type="hidden" name="_captcha" value="false">
 
-                <button type="submit">Submit</button>
-            </form>
+    <!-- Optional: redirect after submission -->
+    <input type="hidden" name="_next" value="https://heybartenderyeg.ca/thank-you.html">
+
+    <button type="submit">Submit</button>
+</form>
+
         </section>
     </main>
 
